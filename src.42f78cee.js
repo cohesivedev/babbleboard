@@ -195,7 +195,7 @@ var r=require("buffer").Buffer,e=require("../utils"),t=require("./ConvertWorker"
 },{"./object":"poTW","./load":"hk8q","./support":"QOs9","./defaults":"Xw6I","./external":"zVkk"}],"dYtj":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.getFreeSoundPacks=a,exports.getPackage=c;const t="https://bazaarworld.xyz",e="4eecf1b2-1b65-417d-bc4b-46f6b57c9238";async function a(){let a=await fetch(`${t}/packages/list/${e}`,{mode:"cors"});return(a=await a.json()).filter(t=>t.is_free)}async function c(e){const a=`${t}/packages/download/${e}`;try{const t=await APP_CACHE.match(a);return t||(await APP_CACHE.add(a),APP_CACHE.match(a))}catch(c){return console.log(c),await fetch(a)}}
 },{}],"lqUH":[function(require,module,exports) {
-module.exports="/wobble.d31923cf.mp3";
+module.exports="wobble.d31923cf.mp3";
 },{}],"e7Sb":[function(require,module,exports) {
 function r(r){if(Array.isArray(r))return r}module.exports=r;
 },{}],"nyVk":[function(require,module,exports) {
